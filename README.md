@@ -1,7 +1,7 @@
-# Primer desafio
-<h2 align="center">Clases con ECMAScript y ECMAScript avanzado</h1>
-<div><p>Realizar una clase "<b>ProductManager</b>" que gestione un conjunto de productos.</p><br/>
-<p>Debe crearse desde su constructor con el elemento products, el cual será un arreglo vacío.</p><br/>
+# Segundo desafio
+<h2 align="center">Manejo de Archivos</h1>
+<div><p>Realizar una clase de nombre "ProductManager", el cual permitirá trabajar con múltiples productos. Éste debe poder agregar, consultar, modificar y eliminar un producto y manejarlo en persistencia de archivos</p><br/>
+<p>La clase debe contar con una variable this.path, el cual se inicializará desde el constructor y debe recibir la ruta a trabajar desde el momento de generar su instancia.</p><br/>
 <p>Cada producto que gestione debe contar con las propiedades:</p>
 <ul>
   <li>title (nombre del producto)</li>
@@ -11,7 +11,9 @@
   <li>code (código identificador)</li>
   <li>stock (número de piezas disponibles)</li>
 </ul><br/>
-<p>Debe contar con un método "<b>addProduct</b>" el cual agregará un producto al arreglo de productos inicial.Validar que no se repita el campo "code" y que todos los campos sean obligatorios. Al agregarlo, debe crearse con un id autoincrementable</p><br/>
-<p>Debe contar con un método "<b>getProducts</b>" el cual debe devolver el arreglo con todos los productos creados hasta ese momento</p><br/>
-<p>Debe contar con un método "<b>getProductByld</b>" el cual debe buscar en el arreglo el producto que coincida con el id. En caso de no coincidir ningún id, mostrar en consola un error "<i>Not found</i>"</p>
+<p>Debe contar con un método "<b>addProduct</b>" el cual agregará un producto al arreglo del archivo.Validar que no se repita el campo "code" y que todos los campos sean obligatorios. Al agregarlo, debe crearse con un id autoincrementable</p><br/>
+<p>Debe tener un método "<b>getProducts</b>", el cual debe leer el archivo de productos y devolver todos los productos en formato de arre 10.</p><br/>
+<p>Debe contar con un método "<b>getProductByld</b>" el cual debe recibir un id, y tras leer el archivo, debe buscar el producto con el id especificado y devolverlo en formato objeto</p>
+<p>Debe tener un método "<b>updateProduct</b>", cual debe recibir el id del producto a actualizar, así también como el campo a actualizar (puede ser el objeto completo, como en una DB), y debe actualizar el producto que tenga ese id en el archivo. <b>NO DEBE BORRARSE SU ID</b> </p>
+<p>Debe tener un método "<b>deleteProduct</b>", el cual debe recibir un id y debe eliminar el producto que tenga ese id en el archivo.</p>
 </div>
